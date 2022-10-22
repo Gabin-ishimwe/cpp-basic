@@ -11,5 +11,11 @@ int main() {
   std::cout << w << std::endl;
   std::cout << m << std::endl;
 
+  // type conversion
+  int var1 = 14;
+  int var2 = 20;
+  double div = (double) var1 / (double) var2;
+  std::cout << div << std::endl;
+
   return 0;
 }

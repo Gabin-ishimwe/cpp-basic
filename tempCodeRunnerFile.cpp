@@ -1,2 +1,1 @@
-std::cout << "What is your age? ";
-  std::cin >> age;
+number % 2

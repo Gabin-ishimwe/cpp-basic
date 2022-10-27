@@ -1,5 +1,7 @@
 #include <iostream>
 
+void printPointer(std::string *name);
+
 int main() {
 
   std::string name = "bro";
@@ -13,18 +15,24 @@ int main() {
 
   std::string *nullPointer = nullptr;
 
-  nullPointer =&name;
+  printPointer(&name);
+
+  nullPointer = &name;
   if(nullPointer == nullptr) {
     std::cout << "address was not assigned\n";
     // std::cout << *nullPointer << "\n";
   }
   else {
-    std::cout << *nullPointer << "\n";
+    std::cout << *nullPointer << "uio\n"; 
   }
   std::cout << *pName << "\n";
   std::cout << *pAge << "\n";
-  std::cout << *pPizzas << "\n";
+  std::cout << pPizzas << "\n";
 
 
   return 0;
+}
+
+void printPointer(std::string *name) {
+  std::cout << *name << "\n";
 }
